@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f8;
+    color: #1f2937;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.site-header {
+    background-color: #0b3d4a;
+    color: white;
+    position: relative;
+    z-index: 1000;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    height: 110px;
+    width: auto;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    background-image: url("../assets/images/Sfeer.png");
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #0b3d4a;
+    height: 35vh;
+    position: relative;
+
+}
+
+.hero-overlay {
+    background-color: rgba(11, 61, 74, 0.25);
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    padding: 1rem;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    margin-bottom: 1rem;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #0b3d4a;
+    padding: 0.75rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.small-btn {
+    padding: 0.55rem 1rem;
+    margin-top: 0.5rem;
+}
+
+/* LAYOUT */
+.layout {
+    padding: 2rem 0;
+}
+
+.main-content {
+    flex: 3;
+    background-color: #eef4f6;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #dbe7ea;
+    padding: 1.5rem;
+    border-radius: 0;
+    border: 2px solid #0b3d4a;
+    min-height: 750px;
+}
+
+.about-flex {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-photo {
+    width: 270px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 50% / 40%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    flex-shrink: 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: brightness(1.1) contrast(1.1);
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.project-image {
+    width: 100%;
+    margin: 1.5rem 0;
+    overflow: visible;
+}
+
+.detail-image {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* FORM */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #c9d1d4;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.contact-form button {
+    background-color: #0b3d4a;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #082f39;
+}
+
+/* FOOTER */
+.site-footer {
+    background-color: #0b3d4a;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* LINKS IN ASIDE */
+.sidebar a {
+    color: #0b3d4a;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: #0b3d4a;
+    min-width: 180px;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.6rem 1rem;
+    color: #0b3d4a;
+}
+
+.dropdown-menu a:hover {
+    background-color: #eef4f6;
+}
+
+/* SHOW ON HOVER */
+/*.dropdown:hover .dropdown-menu {
+    display: block;
+} */
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+
+
+
+.search-box {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-box input {
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    border: none;
+}
+
+.search-box button {
+    background-color: white;
+    color: #0b3d4a;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.specialisaties {
+    width: 95%;
+    max-width: 1400px; /* maakt het breder */
+    margin: 0 auto;
+}
+
+.tech-badges span {
+    display: inline-block;
+    background: #0f4c5c;
+    color: white;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 35vh;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* 🔥 DIT ONTBREEKT BIJ JOU */
+    .nav-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .site-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-box {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        height: 45vh;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
