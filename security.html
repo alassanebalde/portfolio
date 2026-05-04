@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail - Balde Technology</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-flex">
+
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="./assets/images/logo.png" alt="Balde Technology logo" class="logo">
+            </a>
+
+            <nav class="site-nav">
+                <a href="index.html">home</a>
+
+                <div class="dropdown">
+                    <a href="portfolio.html">portfolio ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="portfolio.html">Alle projecten</a>
+                        <a href="networking.html">Networking</a>
+                        <a href="infrastructure.html">Infrastructure</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                </div>
+
+                <a href="contact.html">contact</a>
+            </nav>
+        </div>
+
+        <form class="search-box">
+            <input type="text" placeholder="zoeken">
+            <button type="submit">zoek</button>
+        </form>
+
+    </div>
+</header>
+
+    <div class="container layout">
+         <div class="row">
+            <div class="col-md-8">
+                <main class="main-content">
+    <h1>Security</h1>
+
+    <img src="./assets/images/sibs.gif" alt="Security afbeelding" class="detail-image">
+
+    <h2>Beschrijving</h2>
+    <p>
+        Binnen deze specialisatie focus ik op het beveiligen van netwerken en systemen tegen
+        digitale bedreigingen. Cybersecurity is essentieel om data, infrastructuur en gebruikers
+        te beschermen tegen aanvallen en ongeautoriseerde toegang.
+    </p>
+
+    <p>
+        Ik leer hoe ik risico’s kan identificeren, beveiligingsmaatregelen kan implementeren
+        en systemen kan monitoren om mogelijke kwetsbaarheden te voorkomen. Mijn doel is om
+        veilige en betrouwbare IT-omgevingen te creëren.
+    </p>
+
+    <h2>Focus op</h2>
+    <ul>
+        <li>Netwerkbeveiliging</li>
+        <li>Firewalls en toegangscontrole</li>
+        <li>Basisprincipes van cybersecurity</li>
+        <li>Beveiliging van servers en systemen</li>
+        <li>Detectie van bedreigingen en risicoanalyse</li>
+    </ul>
+
+    <h2>Gebruikte technologieën</h2>
+    <ul>
+        <li>Firewall configuraties</li>
+        <li>Windows Server security</li>
+        <li>Linux security tools</li>
+        <li>Netwerk monitoring tools</li>
+    </ul>
+</main>
+</div>
+    <div class="col-md-4">
+        <aside class="sidebar">
+    <h3>Specialisatie-info</h3>
+    <ul>
+        <li><strong>Type:</strong> Specialisatie</li>
+        <li><strong>Categorie:</strong> Security</li>
+        <li><strong>Focus:</strong> Cybersecurity</li>
+    </ul>
+
+<h3>Acties</h3>
+        <p><a href="index.html">← Terug naar home</a></p>
+        <p><a href="portfolio.html">Bekijk portfolio</a></p>
+        </aside>
+        </div>
+    </div>
+</div>
+
+    <footer class="site-footer">
+        <div class="container">
+            © 2026 Balde Technology
+        </div>
+    </footer>
+    <script>
+    const dropdownLink = document.querySelector('.dropdown > a');
+    const dropdown = document.querySelector('.dropdown');
+
+    dropdownLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        dropdown.classList.toggle('active');
+    });
+</script>
+</body>
+</html>

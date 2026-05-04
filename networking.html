@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking - Balde Technology</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-flex">
+
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="./assets/images/logo.png" alt="Balde Technology logo" class="logo">
+            </a>
+
+            <nav class="site-nav">
+                <a href="index.html">home</a>
+
+                <div class="dropdown">
+                    <a href="portfolio.html">portfolio ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="portfolio.html">Alle projecten</a>
+                        <a href="networking.html">Networking</a>
+                        <a href="infrastructure.html">Infrastructure</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                </div>
+
+                <a href="contact.html">contact</a>
+            </nav>
+        </div>
+
+        <form class="search-box">
+            <input type="text" placeholder="zoeken">
+            <button type="submit">zoek</button>
+        </form>
+
+    </div>
+</header>
+
+    <div class="container layout">
+        <div class="row">
+            <div class="col-md-8">
+                <main class="main-content">
+    <h1>Networking</h1>
+
+    <img src="./assets/images/sfeer.png" alt="Networking afbeelding" class="detail-image">
+
+    <h2>Beschrijving</h2>
+    <p>
+        In deze specialisatie focus ik op het ontwerpen, configureren en beheren van netwerken.
+        Ik werk met IP-adressering, VLAN’s, switching en routing om betrouwbare en veilige
+        netwerkverbindingen op te bouwen.
+    </p>
+
+    <p>
+        Networking is voor mij belangrijk omdat elk IT-systeem afhankelijk is van een stabiele
+        verbinding. Daarom leer ik hoe ik netwerkproblemen kan analyseren, oplossen en voorkomen.
+    </p>
+
+    <h2>Vaardigheden</h2>
+    <ul>
+        <li>IP-adressering en subnetting</li>
+        <li>VLAN-configuratie</li>
+        <li>Switching en routing</li>
+        <li>Troubleshooting</li>
+        <li>Basis netwerkbeveiliging</li>
+        </ul>
+    </main>
+</div>
+
+    <div class="col-md-4">
+        <aside class="sidebar">
+        <h3>Specialisatie-info</h3>
+    <ul>
+        <li><strong>Type:</strong> Specialisatie</li>
+        <li><strong>Categorie:</strong> Networking</li>
+        <li><strong>Focus:</strong> Netwerkbeheer</li>
+    </ul>
+
+    <h3>Acties</h3>
+    <p><a href="index.html">← Terug naar home</a></p>
+    <p><a href="portfolio.html">Bekijk portfolio</a></p>
+</aside>
+        </div>
+     </div>
+</div>
+
+    <footer class="site-footer">
+        <div class="container">
+            © 2026 Balde Technology
+        </div>
+    </footer>
+    <script>
+    const dropdownLink = document.querySelector('.dropdown > a');
+    const dropdown = document.querySelector('.dropdown');
+
+    dropdownLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        dropdown.classList.toggle('active');
+    });
+</script>
+</body>
+</html>

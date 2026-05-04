@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail - Balde Technology</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-flex">
+
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="./assets/images/logo.png" alt="Balde Technology logo" class="logo">
+            </a>
+
+            <nav class="site-nav">
+                <a href="index.html">home</a>
+
+                <div class="dropdown">
+                    <a href="portfolio.html">portfolio ▾</a>
+                    <div class="dropdown-menu">
+                        <a href="portfolio.html">Alle projecten</a>
+                        <a href="networking.html">Networking</a>
+                        <a href="infrastructure.html">Infrastructure</a>
+                        <a href="security.html">Security</a>
+
+                    </div>
+                </div>
+
+                <a href="contact.html">contact</a>
+            </nav>
+        </div>
+
+        <form class="search-box">
+            <input type="text" placeholder="zoeken">
+            <button type="submit">zoek</button>
+        </form>
+
+    </div>
+</header>
+
+    <div class="container layout">
+         <div class="row">
+            <div class="col-md-8">
+                <main class="main-content">
+        <h1>Secure Enterprise Network</h1>
+
+        <div class="project-image">
+            <img src="./assets/images/diag.png" alt="Netwerkdiagram" class="detail-image">
+        </div>
+
+    <div class="tech-badges">
+    <span>Cisco</span>
+    <span>VLAN</span>
+    <span>Routing</span>
+    <span>Windows Server</span>
+    <span>Active Directory</span>
+    <span>PowerShell</span>
+</div>
+
+    <h2>Projectoverzicht</h2>
+    <p>
+    Voor dit project heb ik meegewerkt aan het ontwerpen en implementeren van een veilig bedrijfsnetwerk
+    met focus op netwerksegmentatie, centrale gebruikersbeheer en security.
+
+    Ik was betrokken bij de configuratie van VLANs, IP-adressering, Cisco netwerkapparatuur en het
+    opzetten van een Windows Server omgeving met Active Directory.
+    </p>
+
+    <h2>Mijn rol</h2>
+<ul class="project-list">
+    <li>Configuratie van VLANs en netwerksegmentatie</li>
+    <li>Opzetten van Router-on-a-Stick (inter-VLAN routing)</li>
+    <li>Configuratie van Cisco switch en router (CLI)</li>
+    <li>Implementatie van securitymaatregelen</li>
+    <li>Werken met Windows Server Core en Active Directory</li>
+</ul>
+
+
+
+    <p>
+        Het project bestond uit een Cisco-router, Cisco-switch, Windows Server Core,
+        Domain Controller, File Server, clients en een managementlaptop. De focus lag op
+        netwerksegmentatie, centraal beheer en cybersecurity.
+    </p>
+
+    <h2>Netwerkarchitectuur</h2>
+    <p>
+        Het netwerk werd opgesplitst in verschillende VLANs. Hierdoor worden servers,
+        clients en managementtoestellen logisch van elkaar gescheiden. Via Router-on-a-Stick
+        werd communicatie tussen de VLANs mogelijk gemaakt.
+    </p>
+
+    <ul>
+        <li><strong>VLAN 10:</strong> Servers</li>
+        <li><strong>VLAN 20:</strong> Clients</li>
+        <li><strong>VLAN 99:</strong> Native VLAN</li>
+        <li><strong>VLAN 100:</strong> Management</li>
+        <li><strong>VLAN 999:</strong> Blackhole VLAN voor ongebruikte poorten</li>
+    </ul>
+
+    <h2>Securitymaatregelen</h2>
+    <p>
+        Security was een belangrijk onderdeel van dit project. We hebben verschillende
+        maatregelen toegepast om het netwerk beter te beschermen.
+    </p>
+
+    <ul>
+        <li>SSH gebruikt voor veilig remote beheer</li>
+        <li>VLAN 1 vermeden als standaard VLAN</li>
+        <li>Native VLAN aangepast naar VLAN 99</li>
+        <li>Ongebruikte switchpoorten uitgeschakeld</li>
+        <li>Ongebruikte poorten toegewezen aan VLAN 999</li>
+        <li>Wachtwoorden versleuteld op netwerkapparaten</li>
+    </ul>
+
+    <h2>Windows Server & Active Directory</h2>
+    <p>
+        Voor het servergedeelte werd gewerkt met Windows Server Core. De Domain Controller
+        werd ingesteld via PowerShell en gebruikt voor centraal beheer van gebruikers,
+        computers en policies.
+    </p>
+
+    <ul>
+        <li>Installatie van Active Directory Domain Services</li>
+        <li>Aanmaken van het domein <strong>snwb.test</strong></li>
+        <li>Organizational Units aangemaakt</li>
+        <li>Testgebruikers toegevoegd</li>
+        <li>Beheer via PowerShell</li>
+    </ul>
+
+    <h2>Group Policy Objects</h2>
+    <p>
+        Via Group Policy werden beveiligingsregels ingesteld voor gebruikers binnen het domein.
+        Zo werd het netwerk centraal beheerd en beter beschermd tegen risico’s.
+    </p>
+
+    <ul>
+        <li>USB-opslagmedia blokkeren</li>
+        <li>Software-installatie beperken</li>
+        <li>Logon-waarschuwing tonen bij aanmelden</li>
+    </ul>
+
+    <h2>Mijn bijdrage</h2>
+    <p>
+        Binnen dit project heb ik meegewerkt aan de technische uitwerking, configuratie
+        en documentatie. Ik heb vooral ervaring opgedaan met netwerkconfiguratie, VLANs,
+        IP-adressering, security en Windows Server-beheer.
+    </p>
+
+    <h2>Wat ik geleerd heb</h2>
+    <ul>
+        <li>Een professioneel netwerk ontwerpen en documenteren</li>
+        <li>VLANs en subnetten correct toepassen</li>
+        <li>Router-on-a-Stick configureren</li>
+        <li>Switches en routers beveiligen</li>
+        <li>Windows Server Core beheren met PowerShell</li>
+        <li>Active Directory en Group Policy gebruiken</li>
+    </ul>
+     <h2>Resultaat</h2>
+    <p>
+        Het eindresultaat is een stabiel en veilig bedrijfsnetwerk waarin alle toestellen correct
+        met elkaar communiceren. Dankzij VLAN-segmentatie en securitymaatregelen is het netwerk
+        beter beschermd tegen ongeautoriseerde toegang en mogelijke bedreigingen.
+
+        Dit project toont mijn vaardigheden in netwerkbeheer, system administration en cybersecurity.
+    </p>
+<ul class="project-list">
+    <li>Volledig werkend netwerk met VLAN segmentatie</li>
+    <li>Centrale gebruikersbeheer via Active Directory</li>
+    <li>Security policies succesvol geïmplementeerd</li>
+</ul>
+
+</main> 
+ </div>
+
+    <div class="col-md-4"> 
+        <aside class="sidebar">
+        <h3>Projectinfo</h3>
+<ul>
+    <li><strong>Type:</strong> Schoolproject</li>
+    <li><strong>Categorie:</strong> Networking / Security</li>
+    <li><strong>Jaar:</strong> 2026</li>
+    <li><strong>Technologie:</strong> Cisco, Windows Server, PowerShell</li>
+</ul>
+
+            <h3>Acties</h3>
+            <p><a href="portfolio.html">← Terug naar portfolio</a></p>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+        <div class="container">
+            © 2026 Balde Technology
+        </div>
+    </footer>
+    <script>
+    const dropdownLink = document.querySelector('.dropdown > a');
+    const dropdown = document.querySelector('.dropdown');
+
+    dropdownLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        dropdown.classList.toggle('active');
+    });
+</script>
+</body>
+</html>
