@@ -1,1 +1,381 @@
-
+{
+    "network_devices": [
+        {
+            "id": 1,
+            "name": "router 01",
+            "type": "router",
+            "ip_address": "192.168.1.1",
+            "status": "actief",
+            "bandwidth_usage": {
+                "download": "100Mbps",
+                "upload": "50Mbps"
+            },
+            "connected_devices": 35,
+            "location": {
+                "address": "gebouw A, serverruimte 1"
+            },
+            "image": "./assets/images/networks/router-01.webp",
+            "description": "Primaire router voor het netwerk van gebouw A. Een router vormt het knooppunt tussen netwerken en zorgt voor een efficiënte datastroom tussen apparaten. Met functies zoals NAT en DHCP verdeelt deze router IP-adressen en zorgt hij ervoor dat externe en interne netwerken veilig en snel kunnen communiceren.",
+            "brand": "Cisco"
+        },
+        {
+            "id": 2,
+            "name": "switch 01",
+            "type": "switch",
+            "ip_address": "192.168.1.2",
+            "status": "actief",
+            "port_status": {
+                "actief_ports": 24,
+                "total_ports": 48
+            },
+            "connected_devices": 24,
+            "location": {
+                "address": "gebouw A, verdieping 2"
+            },
+            "image": "./assets/images/networks/switch-01.webp",
+            "description": "Cor switch voor gebouw A, voor het verbinden van meerdere verdiepingen. Deze switch fungeert als een centraal punt in een lokaal netwerk, waarbij hij meerdere apparaten met elkaar verbindt via Ethernet-kabels. Hij zorgt voor efficiënte datatransmissie door verkeer direct naar het juiste apparaat te sturen, wat leidt tot verbeterde netwerkprestaties en minder congestie.",
+            "brand": "HP"
+        },
+        {
+            "id": 3,
+            "name": "firewall 01",
+            "type": "firewall",
+            "ip_address": "192.168.1.3",
+            "status": "actief",
+            "security_logs": {
+                "blocked_attacks": 15,
+                "successful_pass_throughs": 0
+            },
+            "location": {
+                "address": "gebouw A, beveiligingsruimte"
+            },
+            "image": "./assets/images/networks/firewall-01.webp",
+            "description": "Firewall beschermt het netwerk van gebouw A. Deze hardwarematige firewall beschermt het netwerk tegen externe bedreigingen door ongeautoriseerde toegang te blokkeren. Hij filtert binnenkomend en uitgaand verkeer op basis van vooraf ingestelde regels, wat zorgt voor een veilige en stabiele netwerkomgeving voor zowel bedrijven als thuisgebruikers.",
+            "brand": "Fortinet"
+        },
+        {
+            "id": 4,
+            "name": "router 02",
+            "type": "router",
+            "ip_address": "192.168.2.1",
+            "status": "niet actief",
+            "bandwidth_usage": {
+                "download": "50Mbps",
+                "upload": "20Mbps"
+            },
+            "connected_devices": 15,
+            "location": {
+                "address": "gebouw B, serverruimte 1"
+            },
+            "image": "./assets/images/networks/router-02.webp",
+            "description": "Backup router voor gebouw B. Deze router verbindt lokale apparaten met het internet, terwijl hij netwerkverkeer efficiënt verdeelt. Door gebruik van firewallfunctionaliteiten biedt hij extra beveiliging tegen ongewenste toegang. Hij zorgt voor stabiele en snelle verbindingen in kleine tot middelgrote netwerken.",
+            "brand": "Netgear"
+        },
+        {
+            "id": 5,
+            "name": "access point 01",
+            "type": "access point",
+            "ip_address": "192.168.2.5",
+            "status": "actief",
+            "bandwidth_usage": {
+                "download": "200Mbps",
+                "upload": "150Mbps"
+            },
+            "connected_devices": 45,
+            "location": {
+                "address": "gebouw B, verdieping 3"
+            },
+            "image": "./assets/images/networks/accesspoint-01.webp",
+            "description": "Wi-Fi-toegangspunt op de derde verdieping. Dit draadloze access point breidt de Wi-Fi-dekking in een kantoor uit, zodat meerdere apparaten naadloos verbinding kunnen maken. Hij fungeert als een brug tussen bekabelde netwerken en draadloze apparaten, wat zorgt voor stabiele connectiviteit en verbeterde netwerktoegang voor mobiele gebruikers.",
+            "brand": "Ubiquiti"
+        },
+        {
+            "id": 6,
+            "name": "switch 02",
+            "type": "switch",
+            "ip_address": "192.168.2.10",
+            "status": "actief",
+            "port_status": {
+                "actief_ports": 48,
+                "total_ports": 48
+            },
+            "connected_devices": 48,
+            "location": {
+                "address": "gebouw B, verdieping 1"
+            },
+            "image": "./assets/images/networks/switch-02.webp",
+            "description": "Main switch regelt alle connecties op verdieping 1. Een managed switch die netwerkbeheerders de mogelijkheid biedt om het netwerkverkeer te monitoren en te configureren. Met ondersteuning voor VLAN's en QoS optimaliseert deze switch het verkeer binnen bedrijfsnetwerken, wat resulteert in betere prestaties en veiligheid.",
+            "brand": "Juniper"
+        },
+        {
+            "id": 7,
+            "name": "router 03",
+            "type": "router",
+            "ip_address": "192.168.3.1",
+            "status": "actief",
+            "bandwidth_usage": {
+                "download": "300Mbps",
+                "upload": "100Mbps"
+            },
+            "connected_devices": 50,
+            "location": {
+                "address": "gebouw C, serverruimte"
+            },
+            "image": "./assets/images/networks/router-03.webp",
+            "description": "Primaire router voor gebouw C. Deze geavanceerde router is geschikt voor grote bedrijven en zorgt voor een naadloze verbinding tussen verschillende subnets. Met load-balancing en VPN-ondersteuning optimaliseert hij verkeer en biedt veilige verbindingen tussen kantoren op afstand.",
+            "brand": "Cisco"
+        },
+        {
+            "id": 8,
+            "name": "access point 02",
+            "type": "access point",
+            "ip_address": "192.168.3.5",
+            "status": "actief",
+            "bandwidth_usage": {
+                "download": "120Mbps",
+                "upload": "80Mbps"
+            },
+            "connected_devices": 30,
+            "location": {
+                "address": "gebouw C, Lobby"
+            },
+            "image": "./assets/images/networks/accesspoint-02.webp",
+            "description": "Wi-Fi-toegangspunt voor de lobby. Dit access point is ontworpen voor kleine bedrijven en biedt eenvoudige installatie en beheer via de cloud. Hij optimaliseert automatisch het draadloze signaal, waardoor gebruikers altijd de beste verbinding hebben, wat belangrijk is voor mobiele medewerkers en klanten.",
+            "brand": "TP-Link"
+        },
+        {
+            "id": 9,
+            "name": "firewall 02",
+            "type": "firewall",
+            "ip_address": "192.168.3.10",
+            "status": "actief",
+            "security_logs": {
+                "blocked_attacks": 20,
+                "successful_pass_throughs": 1
+            },
+            "location": {
+                "address": "gebouw C, beveiligingsruimte"
+            },
+            "image": "./assets/images/networks/firewall-02.webp",
+            "description": "Firewall beschermt het netwerk van gebouw C. Een next-generation firewall die niet alleen netwerkverkeer controleert, maar ook applicatiespecifieke bedreigingen detecteert en blokkeert. Hij biedt diepgaande inspectie en beschermt tegen malware en geavanceerde aanvallen, waardoor hij ideaal is voor moderne bedrijfsnetwerken.",
+            "brand": "Palo Alto"
+        },
+        {
+            "id": 10,
+            "name": "switch 03",
+            "type": "switch",
+            "ip_address": "192.168.4.2",
+            "status": "actief",
+            "port_status": {
+                "actief_ports": 30,
+                "total_ports": 48
+            },
+            "connected_devices": 30,
+            "location": {
+                "address": "gebouw D, verdieping 2"
+            },
+            "image": "./assets/images/networks/switch-03.webp",
+            "description": "Switch connecteert apparaten op de tweede verdieping. Speciaal ontworpen voor industriële netwerken, biedt deze switch een robuuste, duurzame oplossing voor omgevingen met zware omstandigheden. Met redundante poorten en stroomvoorziening zorgt hij voor hoge beschikbaarheid en continu netwerkverkeer, zelfs bij storingen.",
+            "brand": "D-Link"
+        },
+        {
+            "id": 11,
+            "name": "router 04",
+            "type": "router",
+            "ip_address": "192.168.4.1",
+            "status": "actief",
+            "bandwidth_usage": {
+                "download": "400Mbps",
+                "upload": "300Mbps"
+            },
+            "connected_devices": 60,
+            "location": {
+                "address": "gebouw D, serverruimte"
+            },
+            "image": "./assets/images/networks/router-04.webp",
+            "description": "Primary router voor gebouw D. Deze router verdeelt internettoegang in een thuisnetwerk, waarbij hij draadloze en bekabelde verbindingen beheert. Hij ondersteunt meerdere apparaten tegelijk en biedt ouderlijk toezicht en gastnetwerkopties voor extra beveiliging.",
+            "brand": "Cisco"
+        },
+        {
+            "id": 12,
+            "name": "access point 03",
+            "type": "access point",
+            "ip_address": "192.168.4.5",
+            "status": "actief",
+            "bandwidth_usage": {
+                "download": "180Mbps",
+                "upload": "90Mbps"
+            },
+            "connected_devices": 25,
+            "location": {
+                "address": "gebouw D, Cafeteria"
+            },
+            "image": "./assets/images/networks/accesspoint-03.webp",
+            "description": "Wi-Fi-toegangspunt voor internet in de cafetaria.Dit high-performance access point is ontworpen voor drukke netwerken met veel gebruikers. Hij biedt dual-band Wi-Fi en load balancing, waardoor hij ideaal is voor grote ruimtes zoals conferentiecentra, waar hij stabiele en snelle verbindingen voor honderden apparaten mogelijk maakt. ",
+            "brand": "Netgear"
+        },
+        {
+            "id": 13,
+            "name": "firewall 03",
+            "type": "firewall",
+            "ip_address": "192.168.4.10",
+            "status": "actief",
+            "security_logs": {
+                "blocked_attacks": 10,
+                "successful_pass_throughs": 0
+            },
+            "location": {
+                "address": "gebouw D, beveiligingsruimte"
+            },
+            "image": "./assets/images/networks/firewall-03.webp",
+            "description": "Firewall beschermt het netwerk van gebouw D. Een enterprise firewall met ingebouwde VPN-functionaliteit voor veilige toegang op afstand. Hij versleutelt netwerkverbindingen en voorkomt dat gevoelige informatie wordt onderschept, terwijl hij tegelijkertijd ongewenste verbindingen blokkeert.",
+            "brand": "SonicWall"
+        },
+        {
+            "id": 14,
+            "name": "switch 04",
+            "type": "switch",
+            "ip_address": "192.168.5.2",
+            "status": "actief",
+            "port_status": {
+                "actief_ports": 42,
+                "total_ports": 48
+            },
+            "connected_devices": 42,
+            "location": {
+                "address": "gebouw E, verdieping 1"
+            },
+            "image": "./assets/images/networks/switch-04.webp",
+            "description": "Switch connecteert apparaten op de eerste verdieping van gebouw E. Een gigabit switch die hogere snelheden biedt voor datatransmissie, wat essentieel is voor toepassingen die veel bandbreedte vereisen, zoals videostreaming en grote bestandsuitwisselingen. Hij zorgt voor betrouwbare verbindingen in drukke netwerkomgevingen.",
+            "brand": "Juniper"
+        },
+        {
+            "id": 15,
+            "name": "router 05",
+            "type": "router",
+            "ip_address": "192.168.5.1",
+            "status": "niet actief",
+            "bandwidth_usage": {
+                "download": "0Mbps",
+                "upload": "0Mbps"
+            },
+            "connected_devices": 0,
+            "location": {
+                "address": "gebouw E, serverruimte"
+            },
+            "image": "./assets/images/networks/router-05.webp",
+            "description": "Router for back-updoeleinden in gebouw E. Speciaal ontworpen voor industriële toepassingen, biedt deze router een robuuste en betrouwbare netwerkverbinding onder extreme omstandigheden. Hij ondersteunt redundante netwerkverbindingen voor continue uptime en heeft uitgebreide beveiligingsopties.",
+            "brand": "MikroTik"
+        },
+        {
+            "id": 16,
+            "name": "access point",
+            "type": "access point",
+            
+            "status": "actief",
+            "bandwidth_usage": {
+                "download": "250Mbps",
+                "upload": "150Mbps"
+            },
+            "connected_devices": 40,
+            "location": {
+                "address": "gebouw E, Conference Room"
+            },
+            "image": "./assets/images/networks/accesspoint-04.webp",
+            "description": "Access point voor vergaderruimte Wi-Fi. Een mesh-enabled access point dat automatisch verbinding maakt met andere punten om naadloos Wi-Fi-dekking te creëren in grote woningen of kantoren. Het netwerk past zich automatisch aan om dode zones te elimineren en zorgt voor betrouwbare draadloze toegang overal.",
+            "brand": "Ubiquiti"
+        },
+        {
+            "id": 17,
+            "name": "firewall 04",
+            "type": "firewall",
+            "ip_address": "192.168.5.10",
+            "status": "actief",
+            "security_logs": {
+                "blocked_attacks": 18,
+                "successful_pass_throughs": 2
+            },
+            "location": {
+                "address": "gebouw E, beveiligingsruimte"
+            },
+            "image": "./assets/images/networks/firewall-04.webp",
+            "description": "Firewall beschermt het netwerk van gebouw E. Speciaal ontworpen voor industriële netwerken, biedt deze firewall bescherming in kritieke infrastructuren. Hij controleert netwerkverkeer in real-time en zorgt voor segmentatie van het netwerk om ervoor te zorgen dat essentiële systemen afgeschermd blijven van potentiële cyberaanvallen.",
+            "brand": "Check Point"
+        },
+        {
+            "id": 18,
+            "name": "switch 05",
+            "type": "switch",
+            "ip_address": "192.168.6.2",
+            "status": "actief",
+            "port_status": {
+                "actief_ports": 20,
+                "total_ports": 24
+            },
+            "connected_devices": 20,
+            "location": {
+                "address": "gebouw F, verdieping 1"
+            },
+            "image": "./assets/images/networks/switch-05.webp",
+            "description": "Kleine switch verbindt apparaten op verdieping 1 in gebouw F. Deze unmanaged switch biedt eenvoudige plug-and-play-connectiviteit voor kleine netwerken. Hij stuurt gegevens tussen verbonden apparaten zonder extra configuratie, wat ideaal is voor thuisnetwerken en kleine kantoren die geen geavanceerd netwerkbeheer nodig hebben.",
+            "brand": "TP-Link"
+        },
+        {
+            "id": 19,
+            "name": "router 06",
+            "type": "router",
+            "ip_address": "192.168.6.1",
+            "status": "actief",
+            "bandwidth_usage": {
+                "download": "500Mbps",
+                "upload": "250Mbps"
+            },
+            "connected_devices": 80,
+            "location": {
+                "address": "gebouw F, serverruimte"
+            },
+            "image": "./assets/images/networks/router-06.webp",
+            "description": "Router met hoge capaciteit voor gebouw F. Een high-performance router met ondersteuning voor mesh-netwerken, waardoor hij naadloos draadloze dekking uitbreidt in grote ruimtes. Hij zorgt voor dynamische bandbreedtebeheer en heeft ingebouwde beveiligingsprotocollen voor veilig internetgebruik.",
+            "brand": "Huawei"
+        },
+        {
+            "id": 20,
+            "name": "access point 05",
+            "type": "access point",
+            "ip_address": "192.168.6.5",
+            "status": "actief",
+            "bandwidth_usage": {
+                "download": "220Mbps",
+                "upload": "180Mbps"
+            },
+            "connected_devices": 50,
+            "location": {
+                "address": "gebouw F, Lobby"
+            },
+            "image": "./assets/images/networks/accesspoint-05.webp",
+            "description": "Wi-Fi-toegangspunt voor bezoekers in de lobby. Een outdoor access point dat bestand is tegen weersomstandigheden en Wi-Fi-dekking biedt over grote buitengebieden, zoals campussen of parken. Hij is robuust en zorgt voor betrouwbare draadloze toegang, zelfs in zware omgevingen.",
+            "brand": "Linksys"
+        }
+    ],
+    "network_traffic": {
+        "total_traffic": "1.2TB",
+        "peak_time": "16:00",
+        "traffic_per_device": {
+            "router 01": "200GB",
+            "switch 01": "150GB",
+            "firewall 01": "100GB",
+            "router 02": "50GB",
+            "access point 01": "200GB",
+            "switch 02": "100GB",
+            "router 03": "250GB",
+            "access point 02": "100GB",
+            "firewall 02": "80GB",
+            "switch 03": "90GB"
+        }
+    },
+    "network_health": {
+        "uptime": "99.8%",
+        "latency": "12ms",
+        "packet_loss": "0.02%"
+    }
+}
